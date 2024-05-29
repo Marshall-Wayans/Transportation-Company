@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: rgb(255, 255, 255);
+    --second-bg-color: #c0b4b4;
+    --text-color: #161616;
+    --main-color: rgba(30, 113, 202, 0.877);
+    --other-color: red;
+    --bg-image: url(Deathstroke.jpg);
+    --image-opacity: 0.5;
+    --image-height: 100%;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 9%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+    height: 100px;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    z-index: 100;
+}
+
+
+.header p {
+    margin-top: auto;
+    color: rgb(0, 0, 0);
+    background: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-right: 600px;
+
+}
+
+.navbar a{
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.services {
+    margin-top: 2.5in;
+    text-align: left;
+
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+.services p{
+    text-align: center;
+    padding: 20rem;
+    font-size: 1.7rem;
+    
+    
+}
+
+.service {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.containe p {
+    margin: 0;
+    text-align: center;
+    color: #fffbfb;
+}
+ 
+.footee{
+    background-color: #0f0d0d;
+    padding: 20px o;
+    text-align: center;
+}
+
+.containe{
+    max-width: 1200;
+    height: 50px;
+    text-align: center;
+}
+
+
